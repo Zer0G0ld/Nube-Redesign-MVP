@@ -1,0 +1,40 @@
+/* BannerDestaque.css */
+
+.banner-destaque {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    position: relative;
+  }
+  
+  .banner-destaque img {
+    border-radius: 0.75rem;
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .banner-destaque img:hover {
+    transform: scale(1.02);
+  }
+  
+  .banner-destaque .slick-dots {
+    bottom: -30px;
+  }
+  
+  .banner-destaque .slick-dots li button:before {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .banner-destaque .slick-dots li.slick-active button:before {
+    color: #198754; /* verde bootstrap */
+  }
+  
+  .banner-destaque .btn {
+    margin-top: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+  }
+  

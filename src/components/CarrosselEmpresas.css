@@ -1,0 +1,36 @@
+.cards-carrossel {
+    display: inline-flex;
+    white-space: nowrap;
+    gap: 2rem;
+    animation: scroll-left 40s linear infinite;
+  }
+  
+  .cards-carrossel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .card-carrossel-destaque {
+    flex: 0 0 auto;
+  }
+  
+  .cards-carrossel img {
+    max-height: 100px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+  
+  .cards-carrossel img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  }
+  
